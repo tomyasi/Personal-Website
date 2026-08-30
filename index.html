@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Temesgen - IT Support Specialist, Computer Science Graduate & Systems Administrator Portfolio">
-    <meta name="keywords" content="IT Support, Computer Science, Cisco CCNA, Systems Administration, Portfolio, Temesgen">
+    <meta name="description"
+        content="Temesgen - IT Support Specialist, Computer Science Graduate & Systems Administrator Portfolio">
+    <meta name="keywords"
+        content="IT Support, Computer Science, Cisco CCNA, Systems Administration, Portfolio, Temesgen">
     <title>Temesgen — IT Support Specialist & CS Professional</title>
-    
+
     <meta property="og:title" content="Temesgen — Portfolio">
     <meta property="og:description" content="IT Support Specialist & Computer Science Professional">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <div class="ambient-glow glow-top"></div>
     <div class="ambient-glow glow-middle"></div>
+
+
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
     <header class="navbar">
         <div class="nav-container">
@@ -62,19 +73,43 @@
                 <i data-lucide="shield-check" class="badge-icon"></i>
                 <span data-i18n="heroGreeting">Hi, I'm Temesgen</span>
             </div>
-            
-            <h1 class="hero-title">
-                <span data-i18n="heroTitleLine1">IT Support Specialist</span> &amp;<br>
-                <span class="text-accent" data-i18n="heroTitleLine2">Computer Science Professional</span>
-            </h1>
-
+            <section class="hero-title">
+                <span>
+                    <!-- Home Section Headline -->
+                    <span data-i18n="heroTitleLine1">IT Support Specialist</span> &amp;<br>
+                    <h1 class="motion-text">
+                        I am a <span class="typed-text"></span><span class="text-cursor">&nbsp;</span>
+                    </h1>
+                    <!-- Home Section Headline -->
+                </span>
+                <!--             
+                class="text-accent" data-i18n="heroTitleLine2">Computer Science Professional</span>-->
+            </section>
             <p class="hero-description" data-i18n="heroDesc">
-                I build reliable IT solutions, troubleshoot complex technical problems, configure enterprise networks, and manage robust system infrastructure.
+                I build reliable IT solutions, troubleshoot complex technical problems, configure enterprise networks,
+                and manage robust system infrastructure.
             </p>
-
+            <!-- Social Media Section -->
+            <div class="social-links">
+                <a href="https://github.com/tomyasi" target="_blank" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/temu369" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://telegram.org/@temu369777" target="_blank" class="social-icon" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://youtube.com/@ourtone8023" target="_blank" class="social-icon" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Social Media Section -->
             <div class="hero-actions">
-                <a href="#contact" class="btn-primary btn-pill" data-i18n="getInTouch">Get In Touch <i data-lucide="arrow-right"></i></a>
-                <a href="cv/cv.pdf" class="btn-secondary btn-pill" download data-i18n="downloadCV">Download CV <i data-lucide="download"></i></a>
+                <a href="#contact" class="btn-primary btn-pill" data-i18n="getInTouch">Contact Me <i
+                        data-lucide="arrow-right"></i></a>
+                <a href="cv/cv.pdf" class="btn-secondary btn-pill" download data-i18n="downloadCV">Download CV <i
+                        data-lucide="download"></i></a>
             </div>
 
             <div class="hero-avatar-wrapper">
@@ -82,7 +117,9 @@
                 <div class="avatar-frame">
                     <div class="avatar-placeholder">
                         <i data-lucide="user" class="avatar-icon"></i>
-                        <span>Profile Photo</span>
+                        <span><img src="imag-me.jpg" alt="Temesgen Profile Picture" class="profile-img">Profile
+                            Photo</span>
+
                     </div>
                 </div>
             </div>
@@ -105,15 +142,18 @@
                     <div class="project-body">
                         <span class="project-number">01</span>
                         <h3 class="project-title" data-i18n="proj1Title">Facility Management System</h3>
-                        <p class="project-desc" data-i18n="proj1Desc">Comprehensive management system to automate operational workflows, track asset allocation, and handle maintenance requests.</p>
+                        <p class="project-desc" data-i18n="proj1Desc">Comprehensive management system to automate
+                            operational workflows, track asset allocation, and handle maintenance requests.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Django</span>
                             <span class="tag">PostgreSQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-btn" aria-label="View Project Source"><i data-lucide="github"></i> Code</a>
-                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i data-lucide="external-link"></i> Demo</a>
+                            <a href="#" class="project-btn" aria-label="View Project Source"><i
+                                    data-lucide="github"></i> Code</a>
+                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i
+                                    data-lucide="external-link"></i> Demo</a>
                         </div>
                     </div>
                 </article>
@@ -126,16 +166,20 @@
                     </div>
                     <div class="project-body">
                         <span class="project-number">02</span>
-                        <h3 class="project-title" data-i18n="proj2Title">Agricultural Input Supply &amp; Distribution</h3>
-                        <p class="project-desc" data-i18n="proj2Desc">Digital tracking system for monitoring regional agricultural supply chains, inventory management, and resource distribution.</p>
+                        <h3 class="project-title" data-i18n="proj2Title">Agricultural Input Supply &amp; Distribution
+                        </h3>
+                        <p class="project-desc" data-i18n="proj2Desc">Digital tracking system for monitoring regional
+                            agricultural supply chains, inventory management, and resource distribution.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Django</span>
                             <span class="tag">SQLite</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-btn" aria-label="View Project Source"><i data-lucide="github"></i> Code</a>
-                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i data-lucide="external-link"></i> Demo</a>
+                            <a href="#" class="project-btn" aria-label="View Project Source"><i
+                                    data-lucide="github"></i> Code</a>
+                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i
+                                    data-lucide="external-link"></i> Demo</a>
                         </div>
                     </div>
                 </article>
@@ -149,15 +193,18 @@
                     <div class="project-body">
                         <span class="project-number">03</span>
                         <h3 class="project-title" data-i18n="proj3Title">Food Delivery Application</h3>
-                        <p class="project-desc" data-i18n="proj3Desc">Full-featured ordering platform connecting users with local vendors, with real-time order tracking and menu management.</p>
+                        <p class="project-desc" data-i18n="proj3Desc">Full-featured ordering platform connecting users
+                            with local vendors, with real-time order tracking and menu management.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Django</span>
                             <span class="tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-btn" aria-label="View Project Source"><i data-lucide="github"></i> Code</a>
-                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i data-lucide="external-link"></i> Demo</a>
+                            <a href="#" class="project-btn" aria-label="View Project Source"><i
+                                    data-lucide="github"></i> Code</a>
+                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i
+                                    data-lucide="external-link"></i> Demo</a>
                         </div>
                     </div>
                 </article>
@@ -168,7 +215,8 @@
     <section id="services" class="section">
         <div class="container">
             <h2 class="section-heading">
-                <span data-i18n="myHeading">My</span> <span class="text-accent" data-i18n="servicesHeading">Services</span>
+                <span data-i18n="myHeading">My</span> <span class="text-accent"
+                    data-i18n="servicesHeading">Services</span>
             </h2>
 
             <div class="accordion-wrapper">
@@ -181,7 +229,9 @@
                         <i data-lucide="chevron-down" class="accordion-arrow"></i>
                     </button>
                     <div class="accordion-content">
-                        <p data-i18n="srv1Desc">Component-level hardware diagnostics, device repair, software configuration, operating system installation, and preventative maintenance for computers and lab equipment.</p>
+                        <p data-i18n="srv1Desc">Component-level hardware diagnostics, device repair, software
+                            configuration, operating system installation, and preventative maintenance for computers and
+                            lab equipment.</p>
                         <div class="project-tags">
                             <span class="tag">Hardware Repair</span>
                             <span class="tag">Windows/Linux</span>
@@ -194,12 +244,14 @@
                     <button class="accordion-header">
                         <div class="accordion-title-group">
                             <i data-lucide="network" class="accordion-icon"></i>
-                            <span class="accordion-title" data-i18n="srv2Title">Network Configuration &amp; Infrastructure</span>
+                            <span class="accordion-title" data-i18n="srv2Title">Network Configuration &amp;
+                                Infrastructure</span>
                         </div>
                         <i data-lucide="chevron-down" class="accordion-arrow"></i>
                     </button>
                     <div class="accordion-content">
-                        <p data-i18n="srv2Desc">Designing and deploying network topologies, router/switch configuration, TCP/IP, DHCP, DNS, VLAN segmentation, structured cabling, and network troubleshooting.</p>
+                        <p data-i18n="srv2Desc">Designing and deploying network topologies, router/switch configuration,
+                            TCP/IP, DHCP, DNS, VLAN segmentation, structured cabling, and network troubleshooting.</p>
                         <div class="project-tags">
                             <span class="tag">Cisco CCNA</span>
                             <span class="tag">VLAN</span>
@@ -212,12 +264,14 @@
                     <button class="accordion-header">
                         <div class="accordion-title-group">
                             <i data-lucide="code" class="accordion-icon"></i>
-                            <span class="accordion-title" data-i18n="srv3Title">Software &amp; Scripting Development</span>
+                            <span class="accordion-title" data-i18n="srv3Title">Software &amp; Scripting
+                                Development</span>
                         </div>
                         <i data-lucide="chevron-down" class="accordion-arrow"></i>
                     </button>
                     <div class="accordion-content">
-                        <p data-i18n="srv3Desc">Custom automation tools, backend system development with Python and Django, database integration, and responsive web interface development.</p>
+                        <p data-i18n="srv3Desc">Custom automation tools, backend system development with Python and
+                            Django, database integration, and responsive web interface development.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Django</span>
@@ -235,7 +289,8 @@
                         <i data-lucide="chevron-down" class="accordion-arrow"></i>
                     </button>
                     <div class="accordion-content">
-                        <p data-i18n="srv4Desc">Technical education, practical computer lab administration, programming fundamentals instruction, and digital literacy training.</p>
+                        <p data-i18n="srv4Desc">Technical education, practical computer lab administration, programming
+                            fundamentals instruction, and digital literacy training.</p>
                         <div class="project-tags">
                             <span class="tag">Lab Management</span>
                             <span class="tag">Curriculum</span>
@@ -312,7 +367,9 @@
                         <span class="timeline-date">1 Year Professional Experience</span>
                         <h3 class="timeline-role" data-i18n="exp1Role">IT Support &amp; Infrastructure Technician</h3>
                         <p class="timeline-org" data-i18n="exp1Org">School &amp; Enterprise Infrastructure</p>
-                        <p class="timeline-desc" data-i18n="exp1Desc">Responsible for hardware maintenance, repairing damaged computer equipment, operating system provisioning, printer configuration, and local area network cabling and troubleshooting.</p>
+                        <p class="timeline-desc" data-i18n="exp1Desc">Responsible for hardware maintenance, repairing
+                            damaged computer equipment, operating system provisioning, printer configuration, and local
+                            area network cabling and troubleshooting.</p>
                     </div>
                 </div>
 
@@ -322,7 +379,9 @@
                         <span class="timeline-date">1 Year Professional Experience</span>
                         <h3 class="timeline-role" data-i18n="exp2Role">ICT Educator &amp; Lab Administrator</h3>
                         <p class="timeline-org" data-i18n="exp2Org">Educational Institution</p>
-                        <p class="timeline-desc" data-i18n="exp2Desc">Taught ICT curriculum, programming logic, and networking basics. Managed full computer laboratory operations, equipment diagnostics, and administrative reporting systems.</p>
+                        <p class="timeline-desc" data-i18n="exp2Desc">Taught ICT curriculum, programming logic, and
+                            networking basics. Managed full computer laboratory operations, equipment diagnostics, and
+                            administrative reporting systems.</p>
                     </div>
                 </div>
             </div>
@@ -332,7 +391,8 @@
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-heading">
-                <span data-i18n="contactHeadingLine1">Contact</span> <span class="text-accent" data-i18n="contactHeadingLine2">Me</span>
+                <span data-i18n="contactHeadingLine1">Contact</span> <span class="text-accent"
+                    data-i18n="contactHeadingLine2">Me</span>
             </h2>
 
             <div class="contact-grid">
@@ -345,7 +405,8 @@
                             <input type="email" id="email" class="form-input" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                            <textarea id="message" class="form-input form-textarea" placeholder="Your Message" rows="5"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn-primary btn-pill btn-full">
                             <span data-i18n="sendMessage">Send Message</span> <i data-lucide="send"></i>
@@ -360,18 +421,17 @@
                             <div class="info-icon-wrapper"><i data-lucide="mail"></i></div>
                             <div>
                                 <span class="info-label" data-i18n="emailLabel">Email</span>
-                                <h4 class="info-value">your.email@example.com</h4>
+                                <h4 class="info-value">temesgenasichenek@gmail.com</h4>
                             </div>
                         </div>
                         <i data-lucide="arrow-up-right" class="info-arrow"></i>
                     </a>
-
                     <a href="tel:+251923129488" class="info-card">
                         <div class="info-card-left">
                             <div class="info-icon-wrapper"><i data-lucide="phone"></i></div>
                             <div>
                                 <span class="info-label" data-i18n="phoneLabel">Phone</span>
-                                <h4 class="info-value">+251 900 000 000</h4>
+                                <h4 class="info-value">+251 923 129 488</h4>
                             </div>
                         </div>
                         <i data-lucide="arrow-up-right" class="info-arrow"></i>
@@ -399,12 +459,29 @@
                     <span class="text-accent">GREAT TOGETHER.</span>
                 </h2>
             </div>
-
+            <!-- Social Media Section -->
+            <div class="social-links">
+                <a href="https://github.com/tomyasi" target="_blank" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/temu369" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://telegram.org/@temu369777" target="_blank" class="social-icon" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://youtube.com/@ourtone8023" target="_blank" class="social-icon" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Social Media Section -->
             <div class="footer-bottom">
-                <p class="footer-copyright">&copy; 2026 Temesgen. All rights reserved.</p>
+                <p class="footer-copyright" align="center">&copy; 2026 Temesgen. All rights reserved.</p>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/temu369/" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="https://linkedin.com/in/temu369/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                            data-lucide="linkedin"></i></a>
+                    <a href="https://github.com/tomyasi" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            data-lucide="github"></i></a>
                     <a href="mailto:temesgenasichenek@gmail.com.com" aria-label="Email"><i data-lucide="mail"></i></a>
                 </div>
             </div>
@@ -413,5 +490,7 @@
 
     <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/text-animation.js"></script>
 </body>
+
 </html>

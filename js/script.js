@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const langText = document.getElementById('langText');
     let currentLang = localStorage.getItem('site_lang') || 'en';
 
+
     function updateLanguage(lang) {
         currentLang = lang;
         localStorage.setItem('site_lang', lang);
@@ -125,15 +126,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const message = document.getElementById('message').value.trim();
 
             if (name && email && message) {
                 formFeedback.style.color = '#50D83E';
-                formFeedback.textContent = currentLang === 'en' 
-                    ? 'Thank you! Your message has been sent.' 
+                formFeedback.textContent = currentLang === 'en'
+                    ? 'Thank you! Your message has been sent.'
                     : 'እናመሰግናለን! መልእክትዎ ተልኳል።';
                 contactForm.reset();
 
@@ -143,4 +144,124 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --------------------------------------------------
+    // 7. Custom Cursor Effects
+    // --------------------------------------------------
+    const cursorDot = document.querySelector(".cursor-dot");
+    const cursorOutline = document.querySelector(".cursor-outline");
+    const motionText = document.querySelector(".motion-text");
+
+    let mouseX = 0;
+    let mouseY = 0;
+    let outlineX = 0;
+    let outlineY = 0;
+
+    // Track cursor movement
+    window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        // Immediate update for inner dot
+        cursorDot.style.left = `${mouseX}px`;
+        cursorDot.style.top = `${mouseY}px`;
+    });
+
+    // Smooth trailing effect for cursor ring
+    function animateCursor() {
+        // Smooth easing factor (0.15 controls lag speed)
+        outlineX += (mouseX - outlineX) * 0.15;
+        outlineY += (mouseY - outlineY) * 0.15;
+
+        cursorOutline.style.left = `${outlineX}px`;
+        cursorOutline.style.top = `${outlineY}px`;
+
+        requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Text Motion Effect on Hover
+    motionText.addEventListener("mousemove", (e) => {
+        const rect = motionText.getBoundingClientRect();
+        const textCenterX = rect.left + rect.width / 2;
+        const textCenterY = rect.top + rect.height / 2;
+
+        // Calculate distance from center of text
+        const deltaX = (e.clientX - textCenterX) * 0.2; // Adjust multiplier for tilt intensity
+        const deltaY = (e.clientY - textCenterY) * 0.2;
+
+        motionText.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+        cursorOutline.style.width = "65px";
+        cursorOutline.style.height = "65px";
+        cursorOutline.style.backgroundColor = "rgba(56, 189, 248, 0.1)";
+    });
+
+    // Reset text position when mouse leaves
+    motionText.addEventListener("mouseleave", () => {
+        motionText.style.transform = "translate(0px, 0px)";
+        cursorOutline.style.width = "40px";
+        cursorOutline.style.height = "40px";
+        cursorOutline.style.backgroundColor = "transparent";
+    });
+
+    ///////////////////////////////
+    // Smooth Trailing Ring
+    function animateCursor() {
+        outlineX += (mouseX - outlineX) * 0.15;
+        outlineY += (mouseY - outlineY) * 0.15;
+
+        cursorOutline.style.left = `${outlineX}px`;
+        cursorOutline.style.top = `${outlineY}px`;
+
+        requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Text Motion Tracking
+    motionText.addEventListener("mousemove", (e) => {
+        const rect = motionText.getBoundingClientRect();
+        const deltaX = (e.clientX - (rect.left + rect.width / 2)) * 0.2;
+        const deltaY = (e.clientY - (rect.top + rect.height / 2)) * 0.2;
+
+        motionText.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+        cursorOutline.style.width = "70px";
+        cursorOutline.style.height = "70px";
+        cursorOutline.style.backgroundColor = "rgba(56, 189, 248, 0.1)";
+    });
+
+    motionText.addEventListener("mouseleave", () => {
+        motionText.style.transform = "translate(0px, 0px)";
+        resetCursorOutline();
+    });
+
+    // Social Icons Hover & Magnetic Motion
+    socialIcons.forEach((icon) => {
+        icon.addEventListener("mousemove", (e) => {
+            const rect = icon.getBoundingClientRect();
+            const deltaX = (e.clientX - (rect.left + rect.width / 2)) * 0.3;
+            const deltaY = (e.clientY - (rect.top + rect.height / 2)) * 0.3;
+
+            // Pull icon toward cursor slightly (Magnetic Effect)
+            icon.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+
+            // Expand outer cursor ring around the icon
+            cursorOutline.style.width = "60px";
+            cursorOutline.style.height = "60px";
+            cursorOutline.style.borderColor = "#38bdf8";
+            cursorOutline.style.backgroundColor = "rgba(56, 189, 248, 0.2)";
+        });
+
+        icon.addEventListener("mouseleave", () => {
+            icon.style.transform = "translate(0px, 0px)";
+            resetCursorOutline();
+        });
+    });
+
+    function resetCursorOutline() {
+        cursorOutline.style.width = "40px";
+        cursorOutline.style.height = "40px";
+        cursorOutline.style.borderColor = "rgba(56, 189, 248, 0.5)";
+        cursorOutline.style.backgroundColor = "transparent";
+    }
+
 });
