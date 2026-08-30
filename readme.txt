@@ -1,6 +1,7 @@
 # Temesgen — Portfolio Website
 
-# Personal Portfolio Website
+Author
+Temesgen - Computer Science Graduate & IT Specialist
 
 An interactive, responsive portfolio website showcasing technical skills, projects, and professional background in IT infrastructure, networking, and software development.
 
