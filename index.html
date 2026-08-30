@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temesgen - IT Support Specialist, Computer Science Graduate & Systems Administrator Portfolio">
+    <meta name="keywords" content="IT Support, Computer Science, Cisco CCNA, Systems Administration, Portfolio, Temesgen">
+    <title>Temesgen — IT Support Specialist & CS Professional</title>
+    
+    <meta property="og:title" content="Temesgen — Portfolio">
+    <meta property="og:description" content="IT Support Specialist & Computer Science Professional">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="ambient-glow glow-top"></div>
+    <div class="ambient-glow glow-middle"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">Temesgen</a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-i18n="home"><span class="nav-dot"></span>Home</a>
+                <a href="#works" class="nav-link" data-i18n="works">Works</a>
+                <a href="#services" class="nav-link" data-i18n="services">My Services</a>
+                <a href="#skills" class="nav-link" data-i18n="skills">Skills</a>
+                <a href="#experience" class="nav-link" data-i18n="experience">Experience</a>
+            </nav>
+
+            <div class="nav-controls">
+                <button id="langToggle" class="control-btn" aria-label="Toggle Language">
+                    <span id="langText">AM</span>
+                </button>
+
+                <button id="themeToggle" class="control-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="icon-sun"></i>
+                    <i data-lucide="moon" class="icon-moon"></i>
+                </button>
+
+                <a href="#contact" class="btn-primary btn-pill nav-cta" data-i18n="contact">Contact Me</a>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle Mobile Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i data-lucide="shield-check" class="badge-icon"></i>
+                <span data-i18n="heroGreeting">Hi, I'm Temesgen</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span data-i18n="heroTitleLine1">IT Support Specialist</span> &amp;<br>
+                <span class="text-accent" data-i18n="heroTitleLine2">Computer Science Professional</span>
+            </h1>
+
+            <p class="hero-description" data-i18n="heroDesc">
+                I build reliable IT solutions, troubleshoot complex technical problems, configure enterprise networks, and manage robust system infrastructure.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary btn-pill" data-i18n="getInTouch">Get In Touch <i data-lucide="arrow-right"></i></a>
+                <a href="cv/cv.pdf" class="btn-secondary btn-pill" download data-i18n="downloadCV">Download CV <i data-lucide="download"></i></a>
+            </div>
+
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-glow"></div>
+                <div class="avatar-frame">
+                    <div class="avatar-placeholder">
+                        <i data-lucide="user" class="avatar-icon"></i>
+                        <span>Profile Photo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span data-i18n="myHeading">My</span> <span class="text-accent" data-i18n="worksHeading">Works</span>
+            </h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image-placeholder">
+                            <i data-lucide="layout-grid" class="placeholder-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-number">01</span>
+                        <h3 class="project-title" data-i18n="proj1Title">Facility Management System</h3>
+                        <p class="project-desc" data-i18n="proj1Desc">Comprehensive management system to automate operational workflows, track asset allocation, and handle maintenance requests.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-btn" aria-label="View Project Source"><i data-lucide="github"></i> Code</a>
+                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i data-lucide="external-link"></i> Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image-placeholder">
+                            <i data-lucide="truck" class="placeholder-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-number">02</span>
+                        <h3 class="project-title" data-i18n="proj2Title">Agricultural Input Supply &amp; Distribution</h3>
+                        <p class="project-desc" data-i18n="proj2Desc">Digital tracking system for monitoring regional agricultural supply chains, inventory management, and resource distribution.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-btn" aria-label="View Project Source"><i data-lucide="github"></i> Code</a>
+                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i data-lucide="external-link"></i> Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <div class="project-image-placeholder">
+                            <i data-lucide="shopping-bag" class="placeholder-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-number">03</span>
+                        <h3 class="project-title" data-i18n="proj3Title">Food Delivery Application</h3>
+                        <p class="project-desc" data-i18n="proj3Desc">Full-featured ordering platform connecting users with local vendors, with real-time order tracking and menu management.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-btn" aria-label="View Project Source"><i data-lucide="github"></i> Code</a>
+                            <a href="#" class="project-btn primary" aria-label="View Live Project"><i data-lucide="external-link"></i> Demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span data-i18n="myHeading">My</span> <span class="text-accent" data-i18n="servicesHeading">Services</span>
+            </h2>
+
+            <div class="accordion-wrapper">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i data-lucide="wrench" class="accordion-icon"></i>
+                            <span class="accordion-title" data-i18n="srv1Title">IT Support &amp; Maintenance</span>
+                        </div>
+                        <i data-lucide="chevron-down" class="accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="srv1Desc">Component-level hardware diagnostics, device repair, software configuration, operating system installation, and preventative maintenance for computers and lab equipment.</p>
+                        <div class="project-tags">
+                            <span class="tag">Hardware Repair</span>
+                            <span class="tag">Windows/Linux</span>
+                            <span class="tag">Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i data-lucide="network" class="accordion-icon"></i>
+                            <span class="accordion-title" data-i18n="srv2Title">Network Configuration &amp; Infrastructure</span>
+                        </div>
+                        <i data-lucide="chevron-down" class="accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="srv2Desc">Designing and deploying network topologies, router/switch configuration, TCP/IP, DHCP, DNS, VLAN segmentation, structured cabling, and network troubleshooting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Cisco CCNA</span>
+                            <span class="tag">VLAN</span>
+                            <span class="tag">Routing &amp; Switching</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i data-lucide="code" class="accordion-icon"></i>
+                            <span class="accordion-title" data-i18n="srv3Title">Software &amp; Scripting Development</span>
+                        </div>
+                        <i data-lucide="chevron-down" class="accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="srv3Desc">Custom automation tools, backend system development with Python and Django, database integration, and responsive web interface development.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i data-lucide="graduation-cap" class="accordion-icon"></i>
+                            <span class="accordion-title" data-i18n="srv4Title">ICT Instruction &amp; Training</span>
+                        </div>
+                        <i data-lucide="chevron-down" class="accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="srv4Desc">Technical education, practical computer lab administration, programming fundamentals instruction, and digital literacy training.</p>
+                        <div class="project-tags">
+                            <span class="tag">Lab Management</span>
+                            <span class="tag">Curriculum</span>
+                            <span class="tag">EMIS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span data-i18n="myHeading">My</span> <span class="text-accent" data-i18n="skillsHeading">Skills</span>
+            </h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i data-lucide="monitor" class="skill-icon"></i>
+                        <h3 class="skill-category-title" data-i18n="skCat1">IT Support</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i data-lucide="check" class="check-icon"></i> Computer Maintenance</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Hardware Diagnostics</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Windows &amp; Linux Admin</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Software Troubleshooting</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Printer &amp; Peripheral Support</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i data-lucide="server" class="skill-icon"></i>
+                        <h3 class="skill-category-title" data-i18n="skCat2">Networking</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i data-lucide="check" class="check-icon"></i> Cisco CCNA Routing/Switching</li>
+                        <li><i data-lucide="check" class="check-icon"></i> TCP/IP, IP Addressing &amp; Subnetting</li>
+                        <li><i data-lucide="check" class="check-icon"></i> DHCP, DNS &amp; VLAN Setup</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Network Troubleshooting &amp; Security</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Structured Ethernet Cabling</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i data-lucide="terminal" class="skill-icon"></i>
+                        <h3 class="skill-category-title" data-i18n="skCat3">Programming</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i data-lucide="check" class="check-icon"></i> Python (Automation &amp; Scripting)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> HTML5, CSS3 &amp; JavaScript</li>
+                        <li><i data-lucide="check" class="check-icon"></i> PHP &amp; SQL Databases</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Git &amp; GitHub Version Control</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Document &amp; QR Automation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span data-i18n="myHeading">My</span> <span class="text-accent" data-i18n="expHeading">Experience</span>
+            </h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1 Year Professional Experience</span>
+                        <h3 class="timeline-role" data-i18n="exp1Role">IT Support &amp; Infrastructure Technician</h3>
+                        <p class="timeline-org" data-i18n="exp1Org">School &amp; Enterprise Infrastructure</p>
+                        <p class="timeline-desc" data-i18n="exp1Desc">Responsible for hardware maintenance, repairing damaged computer equipment, operating system provisioning, printer configuration, and local area network cabling and troubleshooting.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">1 Year Professional Experience</span>
+                        <h3 class="timeline-role" data-i18n="exp2Role">ICT Educator &amp; Lab Administrator</h3>
+                        <p class="timeline-org" data-i18n="exp2Org">Educational Institution</p>
+                        <p class="timeline-desc" data-i18n="exp2Desc">Taught ICT curriculum, programming logic, and networking basics. Managed full computer laboratory operations, equipment diagnostics, and administrative reporting systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-heading">
+                <span data-i18n="contactHeadingLine1">Contact</span> <span class="text-accent" data-i18n="contactHeadingLine2">Me</span>
+            </h2>
+
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-pill btn-full">
+                            <span data-i18n="sendMessage">Send Message</span> <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </div>
+
+                <div class="contact-info-list">
+                    <a href="mailto:temesgenasichenek@gmail.com" class="info-card">
+                        <div class="info-card-left">
+                            <div class="info-icon-wrapper"><i data-lucide="mail"></i></div>
+                            <div>
+                                <span class="info-label" data-i18n="emailLabel">Email</span>
+                                <h4 class="info-value">your.email@example.com</h4>
+                            </div>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="info-arrow"></i>
+                    </a>
+
+                    <a href="tel:+251923129488" class="info-card">
+                        <div class="info-card-left">
+                            <div class="info-icon-wrapper"><i data-lucide="phone"></i></div>
+                            <div>
+                                <span class="info-label" data-i18n="phoneLabel">Phone</span>
+                                <h4 class="info-value">+251 900 000 000</h4>
+                            </div>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="info-arrow"></i>
+                    </a>
+
+                    <div class="info-card">
+                        <div class="info-card-left">
+                            <div class="info-icon-wrapper"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <span class="info-label" data-i18n="locationLabel">Location</span>
+                                <h4 class="info-value">Addis Ababa, Ethiopia</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cta-wrapper">
+                <h2 class="footer-cta-title">
+                    LET'S BUILD SOMETHING<br>
+                    <span class="text-accent">GREAT TOGETHER.</span>
+                </h2>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Temesgen. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/temu369/" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="mailto:temesgenasichenek@gmail.com.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
