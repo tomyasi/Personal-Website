@@ -1,30 +1,29 @@
 # Temesgen — Portfolio Website
 
-A personal portfolio built using HTML5, CSS3, Vanilla JavaScript, and Tailwind-inspired dark green aesthetics with full English and Amharic translation support.
+# Personal Portfolio Website
+
+An interactive, responsive portfolio website showcasing technical skills, projects, and professional background in IT infrastructure, networking, and software development.
 
 ## Features
-* **Dark-Green Aesthetics:** Uses precise color palettes (`#080A05` background, `#50D83E` neon accent) with ambient radial lighting.
-* **Bilingual Support:** Real-time client-side translation toggle between English and Amharic.
-* **Theme Switching:** Dark Mode and Light Mode support with preferences saved in `localStorage`.
-* **Interactive Accordion:** Expandable Services section.
-* **Responsive Layout:** Optimized for mobile (320px) up to ultra-wide displays (1920px).
 
----
+* **Dynamic Text Animation:** Automated typewriter effect cycling through core technical roles and capabilities.
+* **Interactive Custom Cursor:** Smooth-tracking dual-layer custom cursor with dynamic hover states.
+* **Magnetic Social Links:** Interactive social media link bar with magnetic mouse attraction effects.
+* **Responsive Layout:** Fully optimized for clean display across desktop, tablet, and mobile browsers.
 
-## Local Setup & Testing
-1. Clone or download this project folder.
-2. Open `index.html` directly in any browser (Chrome, Edge, Firefox). No build tools or installations are required.
+## Tech Stack
 
----
+* **HTML5:** Semantic site structure and layout accessibility.
+* **CSS3:** Custom styling, flexbox layouts, keyframe animations, and cursor transitions.
+* **JavaScript (ES6+):** DOM manipulation, mouse event tracking, linear interpolation animation loops, and typewriter logic.
+* **FontAwesome:** Scalable iconography for social media links.
 
-## Customization Guide
+## Project Structure
 
-### 1. Update Personal Information
-* Open `index.html` and search for placeholders like `your.email@example.com` or `+251 900 000 000` to update your contact details.
-* Edit `js/translations.js` if you want to update the bilingual text strings.
-
-### 2. Replace Profile Photo
-* Place your photo inside `images/profile.jpg`.
-* Open `index.html`, locate `<div class="avatar-placeholder">`, and replace it with:
-  ```html
-  <img src="images/profile.jpg" alt="Temesgen" style="width:100%; height:100%; object-fit:cover;">
+```text
+portfolio/
+├── index.html        # Main HTML layout
+├── style.css         # Visual styles and animations
+├── text-animation.js # Dynamic typewriter & cursor interaction engine
+├── transitions.js    # language translation 
+└── README.md         # Project docume ntation
