@@ -5,9 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Configuration for titles to cycle through
   const titles = [
     "IT Specialist",
-    "Network Administrator",
-    "Python Developer",
-    "Web Developer",
+    "Network Admin",
+    "System Admin",
+    "Python Dev",
+    "Web Dev",
     "Software Engineer",
     "ICT Educator"
   ];
